@@ -8,7 +8,7 @@ function App() {
   // const colors = ["blue", "red", "green", "yellow", "pink", "gray"];
   return (
     <>
-      <div className=" flex justify-center  align-middle bg-amber-400  border rounded pt-3">
+      <div className="p-0 flex justify-center  align-middle bg-amber-400  border rounded pt-3">
         <button
           class=" mb-4  me-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
           onClick={() => setColor("blue")}>
