@@ -11,6 +11,11 @@ function App() {
     // console.log("value added", Math.random());
     if (counter < 100) {
       setCounter(counter + 1);
+      setCounter(counter + 1);
+      setCounter(counter + 1);
+      setCounter(counter + 1);
+      // what is the output its interview question and why we user fiber and badges
+      // ist create badges then send it and setcounters we callback function ,  last updated value sholud be pass to the next setcounter.
     }
   };
   const decreaseValue = () => {
