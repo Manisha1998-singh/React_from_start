@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useTodo } from "../context/TodoContext";
+import React, { useState } from "react";
+import { useTodo } from "../contexts/TodoContext";
 
 function TodoItem({ todo }) {
   const [isTodoEditable, setIsTodoEditable] = useState(false);
@@ -11,6 +11,7 @@ function TodoItem({ todo }) {
     setIsTodoEditable(false);
   };
   const toggleCompleted = () => {
+    //console.log(todo.id);
     toggleComplete(todo.id);
   };
 
@@ -47,21 +48,6 @@ function TodoItem({ todo }) {
         disabled={todo.completed}>
         {isTodoEditable ? "📁" : "✏️"}
       </button>
-
-      {/* <button
-        aria-label={isTodoEditable ? "Save Todo" : "Edit Todo"}
-        className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50"
-        onClick={() => {
-          if (todo.completed) return;
-
-          if (isTodoEditable) {
-            editTodo();
-          } else setIsTodoEditable((prev) => !prev);
-        }}
-        disabled={todo.completed}>
-        {isTodoEditable ? "📁" : "✏️"}
-      </button> */}
-
       {/* Delete Todo Button */}
       <button
         className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0"
