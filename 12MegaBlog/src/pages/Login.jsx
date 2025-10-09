@@ -1,9 +1,11 @@
 import React from "react";
-import { Login as loginComponent } from "../components";
+import LoginComponent from "../components/Login"; // Capitalized
+
 function Login() {
   return (
     <div className="py-8">
-      <loginComponent />
+      <LoginComponent />
+      {/* ✅ capitalized, React recognizes it as a component */}
     </div>
   );
 }

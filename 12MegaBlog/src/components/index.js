@@ -4,21 +4,27 @@ import Container from "./container/Container";
 import Logo from "./Logo";
 import LogoutBtn from "./Header/LogoutBtn";
 import RTE from "./RTE";
-
 import SignUp from "./SignUp";
 import Login from "./Login";
-import Post from "./Post";
 import PostForm from "./post-form/PostForm";
+import AuthLayout from "./AuthLayout";
+import Button from "./Button";
+
+import Select from "../components/Select";
+import Input from "./input";
 
 export {
   Header,
   Container,
-  Post,
   PostForm,
   Footer,
+  Button,
   Login,
   Logo,
   LogoutBtn,
   RTE,
   SignUp,
+  AuthLayout,
+  Select,
+  Input,
 };
