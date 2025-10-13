@@ -8,7 +8,9 @@ function App() {
   return (
     <>
       <div>
-        <h1 id="textChanger"> number: {count}</h1>
+        <h1 id="textChanger" data-testid="counter">
+          number: {count}
+        </h1>
 
         <button
           onClick={() => setCount((count) => Math.min(Number(count) + 3, 100))}>
