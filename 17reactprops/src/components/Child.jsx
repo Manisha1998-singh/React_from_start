@@ -1,6 +1,6 @@
 import React from "react";
 
-function Child({ person, size, color, married, ...props }) {
+function Child({ person, size = 100, color, married, ...props }) {
   return (
     <div>
       <div person={person} size={size} color={color} married={married}>
